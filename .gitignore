@@ -1,0 +1,20 @@
+#surely
+node_modules/
+
+#ide
+.idea/
+.vscode/
+
+#environment files
+.env
+.env.production
+.env.develop
+.env.staging
+
+package-lock.json
+yarn.lock
+yarn.error
+nohup.out
+
+# MacOS X
+.DS_Store/
