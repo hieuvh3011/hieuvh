@@ -6,7 +6,11 @@
   "license": "MIT",
   "scripts": {
     "start": "node index.js",
-    "devStart": "nodemon server.js"
+    "server": "nodemon index.js --ignore tests",
+    "devStart": "NODE_ENV=develop node index.js",
+    "devServer": "NODE_ENV=develop nodemon --inspect index.js ",
+    "stagingStart": "NODE_ENV=staging node index.js",
+    "stagingServer": "NODE_ENV=staging nodemon index.js --ignore tests"
   },
   "dependencies": {
     "bcrypt": "^5.0.0",
@@ -20,6 +24,7 @@
     "mysql": "^2.18.1",
     "nodemon": "^2.0.6",
     "passport": "^0.4.1",
+    "redis": "^3.0.2",
     "sequelize": "^6.3.5"
   },
   "devDependencies": {

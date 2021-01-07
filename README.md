@@ -29,7 +29,7 @@ After that, you can run my custom script (inside `package.json` if you want to s
 ```bash
 $ yarn devStart
 ```
-then go to [localhost:5000](https://localhost:5000) to see the result.
+then go to [localhost:8088](https://localhost:8088) to see the result (you can change port if it's conflict to port in your computer).
 
 ## 2. Folder structure
 My website follow simple [MVC pattern](https://developer.mozilla.org/en-US/docs/Glossary/MVC). So, here is structure: 
@@ -41,7 +41,6 @@ My website follow simple [MVC pattern](https://developer.mozilla.org/en-US/docs/
   - `models`: defines data structure (all models of application).
   - `router`: contain router (navigator) of application.
   - `views`: defines how the app's data should be displayed. I use [ejs](https://ejs.co/) as my view engine.
-  - `entry_point.js`: config for [dotenv](https://www.npmjs.com/package/dotenv).
 - `.env.*`: contain all the config for difference environments (develop, staging, production). It's also contain a lot of sensitive information (Database host, username, password), that's why you will not see it on git repository, cause I added it in `.gitignore`. You can create your .env file follow .env.example structure.
 - `index.js`: standard endpoint file for NodeJs project.
 
