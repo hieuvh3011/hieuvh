@@ -1,0 +1,16 @@
+# Mac OS X
+.DS_Store/
+
+
+node_modules/
+
+yarn.lock
+yarn-error.lock
+package-lock.json
+
+#ide
+.idea/
+.vscode/
+
+#env
+.env.*
